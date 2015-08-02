@@ -1,0 +1,8 @@
+---
+# tasks file for nodejs
+- include: nodepub.yml
+- include: osarch.yml
+- include: nodejs.yml
+- name: Install global npm packages
+  npm: global=yes name={{ item }} state=present
+  with_items: nodejs_global_packages

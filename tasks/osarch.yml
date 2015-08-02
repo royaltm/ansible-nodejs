@@ -1,0 +1,5 @@
+---
+- fail: msg="os or architecture not supported"
+  when: ansible_distribution != "CentOS" or
+        nodejs_source_path_parts[ansible_distribution_major_version] is not defined or
+        nodejs_source_path_parts[ansible_distribution_major_version][ansible_userspace_architecture] is not defined

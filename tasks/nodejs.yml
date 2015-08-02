@@ -1,0 +1,20 @@
+---
+- name: Download nodejs rpm
+  get_url:
+    url: >
+      {{
+      nodejs_source_url_base +
+      nodejs_source_pub +
+      nodejs_source_path_parts[ansible_distribution_major_version][ansible_userspace_architecture]
+      }}
+    dest: /tmp/{{nodejs_rpm}}
+- name: Install nodejs rpm from a local file
+  yum: name=/tmp/{{nodejs_rpm}} state=present
+- name: Remove temporary rpm from /tmp
+  file: path=/tmp/{{nodejs_rpm}} state=absent
+- name: Install nodejs and development tools
+  yum: name={{item}}
+  with_items:
+    - nodejs
+    - gcc-c++
+    - make

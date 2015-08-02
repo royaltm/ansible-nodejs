@@ -9,7 +9,7 @@ https://github.com/nodesource/distributions
 Requirements
 ------------
 
-Currently only for CentOS 6 & 7.
+Currently only for CentOS 6 & 7. Pull requests are welcome.
 
 
 Role Variables

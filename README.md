@@ -16,7 +16,7 @@ Role Variables
 --------------
 
 * `nodejs_version: 0.12.7` a supported nodejs version
-* `nodejs_global_packages: [ ]` a names of global npm packages to install
+* `nodejs_global_packages: [ ]` names of global npm packages to install
 
 Example Playbook
 ----------------

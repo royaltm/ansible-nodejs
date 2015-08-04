@@ -1,9 +1,7 @@
 ---
-- set_fact:
-    nodejs_source_pub: "/pub_0.12"
+- include_vars: node12.yml
   when: nodejs_version.startswith("0.12.")
-- set_fact:
-    nodejs_source_pub: "/pub_0.10"
+- include_vars: node10.yml
   when: nodejs_version.startswith("0.10.")
 - fail: msg="supported nodejs_version are 0.10 or 0.12"
   when: nodejs_source_pub is not defined

@@ -1,0 +1,4 @@
+---
+nodejs_source_path_parts:
+  i386: /el/6/i386/nodejs-{{nodejs_version}}-1nodesource.el6.i686.rpm
+  x86_64: /el/6/x86_64/nodejs-{{nodejs_version}}-1nodesource.el6.x86_64.rpm

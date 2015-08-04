@@ -5,7 +5,7 @@
       {{
       nodejs_source_url_base +
       nodejs_source_pub +
-      nodejs_source_path_parts[ansible_distribution_major_version][ansible_userspace_architecture]
+      nodejs_source_path_parts[ansible_userspace_architecture]
       }}
     dest: /tmp/{{nodejs_rpm}}
 - name: Install nodejs rpm from a local file

@@ -1,6 +1,6 @@
 ---
 # defaults file for nodejs
-nodejs_version: "0.12.1"
+nodejs_version: "0.12.7"
 nodejs_global_packages: [ ]
 nodejs_source_url_base: "https://rpm.nodesource.com"
 nodejs_rpm: 'nodesource-{{nodejs_version}}-{{ansible_distribution}}-{{ansible_distribution_major_version}}-{{ansible_userspace_architecture}}.rpm'

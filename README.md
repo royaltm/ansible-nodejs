@@ -44,5 +44,5 @@ MIT
 Author Information
 ------------------
 
-Rafal Michalski
+Rafał Michalski
 

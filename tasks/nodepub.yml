@@ -5,5 +5,9 @@
   when: nodejs_version.startswith("0.10.")
 - include_vars: node4x.yml
   when: nodejs_version.startswith("4.")
-- fail: 'msg="supported nodejs_version are 0.10, 0.12 or 4"'
+- include_vars: node5x.yml
+  when: nodejs_version.startswith("5.")
+- include_vars: node6x.yml
+  when: nodejs_version.startswith("6.")
+- fail: 'msg="supported nodejs_version are 0.10, 0.12, 4, 5 or 6"'
   when: nodejs_source_pub is not defined

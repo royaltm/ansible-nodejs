@@ -11,8 +11,9 @@ Supported node versions
 
 * 0.10.x
 * 0.12.x
-* 4.x - CentOS 7 only
-* 6.x - CentOS 7 only
+* 4.x
+* 5.x
+* 6.x
 
 Requirements
 ------------

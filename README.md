@@ -14,6 +14,7 @@ Supported node versions
 * 4.x
 * 5.x
 * 6.x
+* 7.x
 
 Requirements
 ------------
@@ -24,7 +25,7 @@ Currently only for CentOS 6 & 7. Pull requests are welcome.
 Role Variables
 --------------
 
-* `nodejs_version: 4.5.0` a supported nodejs version
+* `nodejs_version: 6.10.3` a supported nodejs version
 * `nodejs_global_packages: [ ]` names of global npm packages to install
 
 Example Playbook
@@ -33,7 +34,7 @@ Example Playbook
     - hosts: example
       roles:
       - role: advertine.nodejs
-        nodejs_version: "6.4.0"
+        nodejs_version: "7.10.0"
         nodejs_global_packages:
           - grunt-cli
           - clean-css

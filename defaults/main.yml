@@ -1,5 +1,5 @@
 ---
 # defaults file for nodejs
-nodejs_version: "6.10.3"
+nodejs_version: "6.11.2"
 nodejs_global_packages: [ ]
 nodejs_source_url_base: "https://rpm.nodesource.com"
